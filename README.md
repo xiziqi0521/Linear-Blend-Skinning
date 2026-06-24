@@ -183,7 +183,6 @@ python animate_lbs.py --model-dir ./models --out-dir ./outputs \
 | 8 | right_ankle | 18 | left_elbow |
 | 10 | left_foot | 19 | right_elbow |
 | 11 | right_foot | 20 | left_wrist |
-<img width="1517" height="1559" alt="all_joint_weights" src="https://github.com/user-attachments/assets/48530eaf-63bf-457a-8415-808232f1a8fd" />
 <img width="838" height="975" alt="lbs_animation" src="https://github.com/user-attachments/assets/7ae7862f-d249-440e-b3b5-9b9ad59ad4c7" />
 
 ---
@@ -197,4 +196,4 @@ python animate_lbs.py --model-dir ./models --out-dir ./outputs \
 人体骨骼位置与体型直接相关——高挑的人肩关节位置更高，肥胖的人髋关节间距更宽。若关节固定不变，形变后的皮肤和骨骼位置会产生明显错位。
 
 **为什么 LBS 之前还需要加姿态混合形变 $B_P(\theta)$？**  
-纯刚体旋转无法表达皮肤在关节弯曲时产生的体积变化（肘部弯曲时肌肉凸出、膝部弯曲时皮肤皱褶等）。姿态混合形变通过线性组合预学习的形变基，补偿这些纯 LBS 无法表达的几何细节。<img width="838" height="975" alt="lbs_animation" src="https://github.com/user-attachments/assets/c3b85039-857c-4c08-a018-18d4d7a95265" />
+纯刚体旋转无法表达皮肤在关节弯曲时产生的体积变化（肘部弯曲时肌肉凸出、膝部弯曲时皮肤皱褶等）。姿态混合形变通过线性组合预学习的形变基，补偿这些纯 LBS 无法表达的几何细节。
